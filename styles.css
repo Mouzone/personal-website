@@ -2,13 +2,18 @@ body {
     margin: 0;
     padding: 0;
     /* Background image settings */
+    height: 80vh;
     background-image: url("/images/windows-wallpaper.jpg");
     background-size: cover;     /* Scale to fill the page */
     background-position: center;
     background-repeat: no-repeat;
 }
 
-#about {
+.window {
+    margin: 100px 20px 0 100px;
+}
+
+#about > .content {
     display: flex;
     justify-content: space-between;
 }
