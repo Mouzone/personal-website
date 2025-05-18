@@ -7,3 +7,8 @@ body {
     background-position: center;
     background-repeat: no-repeat;
 }
+
+#about {
+    display: flex;
+    justify-content: space-between;
+}
