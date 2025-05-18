@@ -10,13 +10,8 @@ body {
 }
 
 .window {
-    width: 25%;
+    width: 30%;
     margin: 100px 100px 0 600px;
-}
-
-#about > .content {
-    display: flex;
-    justify-content: space-between;
 }
 
 #contact-info {
