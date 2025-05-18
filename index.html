@@ -19,13 +19,25 @@
         </div>
         <div class="window-body has-space" x-data="{ tab: 'about' }">
             <menu role="tablist" aria-label="Window with Tabs">
-                <button role="tab" aria-controls="about" x-bind:aria-selected="tab === 'about'" x-on:click="tab = 'about'">About</button>
-                <button role="tab" aria-controls="projects"  x-bind:aria-selected="tab === 'projects'" x-on:click="tab = 'projects'">Projects</button>
+                <button 
+                    role="tab" 
+                    aria-controls="about" 
+                    x-bind:aria-selected="tab === 'about'" 
+                    x-on:click="tab = 'about'">
+                    About
+                </button>
+                <button 
+                    role="tab" 
+                    aria-controls="projects"  
+                    x-bind:aria-selected="tab === 'projects'" 
+                    x-on:click="tab = 'projects'">
+                        Projects
+                </button>
             </menu>
 
             <article role="tabpanel" x-bind:hidden="tab !== 'about'" id="about">
                 <div class="content">
-                    <div>
+                    <div style="margin-right: 5px">
                         <p>
                             Self-taught.
                             Software developer at <a href="https://app.shade.inc/">Shade</a>.  
@@ -61,31 +73,36 @@
                     <summary>
                         <a href="https://github.com/Mouzone/AFAM-Directory"> AFAM Directory </a>
                     </summary>
-                    <p>🎉 Tadah!</p>
+                    <p>Manages attendance and personal records for a youth group of 100+ children, 
+                        using Firestore and Firebase for data access and advanced data handling.</p>
                 </details>
                 <details>
                     <summary>
                         <a href="https://github.com/Mouzone/sermon-transcription"> Sermon Transcription</a>
                     </summary>
-                    <p>🎉 Tadah!</p>
+                    <p>Automatically transcribes my church's daily sermons each morning 
+                        and uses AI to edit them for publication on a static webpage.</p>
                 </details>
                 <details>
                     <summary>
                         <a href="https://github.com/Mouzone/scrape-job"> Scrape Job</a>
                     </summary>
-                    <p>🎉 Tadah!</p>
+                    <p>To track job applications, I built a Chrome extension that logs each submission to Firestore. 
+                        The data is managed through a simple Next.js CRUD frontend.</p>
                 </details>
                 <details>
                     <summary>
                         <a href="https://github.com/Mouzone/obsidian-bible-reference"> Obsidian Bible Reference</a>
                     </summary>
-                    <p>🎉 Tadah!</p>
+                    <p> A fork of Obsidian Bible Reference that uses local XML Bible files 
+                        instead of external APIs for offline use. </p>
                 </details>
                 <details>
                     <summary>
                         <a href="https://github.com/Mouzone/blog"> Blog </a>
                     </summary>
-                    <p>🎉 Tadah!</p>
+                    <p>A collection of my writings, built with Astro and fully server-rendered. 
+                        Essays are written in Markdown and compiled into pages at build time.</p>
                 </details>
             </article>
 
