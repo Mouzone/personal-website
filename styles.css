@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     /* Background image settings */
-    height: 80vh;
+    height: 100vh;
     background-image: url("images/windows-wallpaper.jpg");
     background-size: cover;     /* Scale to fill the page */
     background-position: center;
@@ -11,7 +11,7 @@ body {
 
 .window {
     width: 30%;
-    margin: 100px 100px 0 600px;
+    transform: translate(100%, 60%);
 }
 
 #contact-info {
