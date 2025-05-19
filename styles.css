@@ -14,11 +14,36 @@ body {
     transform: translate(100%, 60%);
 }
 
+.window-body {
+    display: flex; gap:5px;
+}
+
+#about {
+    height: 90px; 
+    overflow-x: auto;
+}
+
 #contact-info {
     display: flex;
     flex-direction: column;
 }
 
+#projects {
+    height: 90px; 
+    width:270px; 
+    overflow-x: auto
+}
+
 #projects details {
     margin-left: 1.5rem;
+}
+
+@media (max-width: 599px) {
+    .window {
+        width: 100%;
+        transform: translate(0%, 50%);
+    }
+    #projects {
+        width: 237px;
+    }
 }

@@ -19,7 +19,7 @@
             </div>
         </div>
         
-        <div class="window-body has-space" x-data="{ tab: 'about' }" style="display: flex; gap:5px;">
+        <div class="window-body has-space" x-data="{ tab: 'about' }">
             <img src="./images/profile-pic.JPG" style="width: 25%"/>
             <div>
                 <menu role="tablist" aria-label="Window with Tabs">
@@ -39,7 +39,7 @@
                     </button>
                 </menu>
 
-                <article role="tabpanel" x-bind:hidden="tab !== 'about'" id="about" class="has-scrollbar" style="height: 90px; overflow-x: auto">
+                <article role="tabpanel" x-bind:hidden="tab !== 'about'" id="about" class="has-scrollbar">
                     <p>
                         Self-taught.
                         Software developer at <a href="https://app.shade.inc/">Shade</a>.  
@@ -64,39 +64,39 @@
                     </details>       
                 </article>
 
-                <article role="tabpanel" x-bind:hidden="tab !== 'projects'" id="projects" class="has-scrollbar" style="height: 90px; width:270px; overflow: auto">
+                <article role="tabpanel" x-bind:hidden="tab !== 'projects'" id="projects" class="has-scrollbar">
                     <p> My projects: </p>
                     <details>
                         <summary>
-                            <a href="https://github.com/Mouzone/AFAM-Directory"> AFAM Directory </a>
+                            <a href="https://github.com/Mouzone/AFAM-Directory" target="_blank" rel="noopener noreferrer"> AFAM Directory </a>
                         </summary>
                         <p>Manages attendance and personal records for a youth group of 100+ children, 
                             using Firestore and Firebase for data access and advanced data handling.</p>
                     </details>
                     <details>
                         <summary>
-                            <a href="https://github.com/Mouzone/sermon-transcription"> Sermon Transcription</a>
+                            <a href="https://github.com/Mouzone/sermon-transcription" target="_blank" rel="noopener noreferrer"> Sermon Transcription</a>
                         </summary>
                         <p>Automatically transcribes my church's daily sermons each morning 
                             and uses AI to edit them for publication on a static webpage.</p>
                     </details>
                     <details>
                         <summary>
-                            <a href="https://github.com/Mouzone/scrape-job"> Scrape Job</a>
+                            <a href="https://github.com/Mouzone/scrape-job" target="_blank" rel="noopener noreferrer"> Scrape Job</a>
                         </summary>
                         <p>To track job applications, I built a Chrome extension that logs each submission to Firestore. 
                             The data is managed through a simple Next.js CRUD frontend.</p>
                     </details>
                     <details>
                         <summary>
-                            <a href="https://github.com/Mouzone/obsidian-bible-reference"> Obsidian Bible Reference</a>
+                            <a href="https://github.com/Mouzone/obsidian-bible-reference" target="_blank" rel="noopener noreferrer"> Obsidian Bible Reference</a>
                         </summary>
                         <p> A fork of Obsidian Bible Reference that uses local XML Bible files 
                             instead of external APIs for offline use. </p>
                     </details>
                     <details>
                         <summary>
-                            <a href="https://github.com/Mouzone/blog"> Blog </a>
+                            <a href="https://github.com/Mouzone/blog" target="_blank" rel="noopener noreferrer"> Blog </a>
                         </summary>
                         <p>A collection of my writings, built with Astro and fully server-rendered. 
                             Essays are written in Markdown and compiled into pages at build time.</p>
